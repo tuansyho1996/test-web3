@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import { ConnectButton } from '@rainbow-me/rainbowkit'
+import CheckoutButton from "@/components/pay.eth";
 
 
 export default function Home() {
@@ -9,8 +10,8 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <h1>Hello Web3</h1>
         <ConnectButton />
+        <CheckoutButton priceInEth={0.000001} />
       </main>
-
     </div>
   );
 }

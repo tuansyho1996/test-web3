@@ -25,13 +25,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <WEb3Provider>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <WEb3Provider>
+
           {children}
-        </body>
-      </WEb3Provider>
+        </WEb3Provider>
+
+      </body>
     </html>
   );
 }
